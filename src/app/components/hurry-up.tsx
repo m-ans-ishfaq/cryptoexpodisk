@@ -43,8 +43,8 @@ function getTimeRemaining(targetDate: Date): TimeRemainingInterface {
     };
   }
   
-// Set the target date (15 January 2024 in Dubai timezone)
-const targetDate = new Date('2024-01-15T00:00:00');
+// Set the target date (15 April 2024 in Dubai timezone)
+const targetDate = new Date('2025-09-15T00:00:00');
 targetDate.setUTCHours(0, 0, 0, 0); // Ensure midnight in UTC
 targetDate.setMinutes(targetDate.getMinutes() - targetDate.getTimezoneOffset() + 4 * 60); // Adjust to Dubai's timezone
 
