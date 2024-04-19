@@ -10,7 +10,7 @@ export function Footer()
         { label : "Terms", href: "#" },
         { label : "Privacy", href: "#" },
         { label : "Cookies", href: "#" },
-    ];
+    ]
 
     return (
         <footer className="relative flex flex-col justify-center items-center text-white">
