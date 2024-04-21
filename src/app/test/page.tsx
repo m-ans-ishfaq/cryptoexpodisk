@@ -1,5 +1,3 @@
-import axios from "axios"
-
 type Response = {
     activity: string;
     type: string;
@@ -12,8 +10,8 @@ type Response = {
 
 export default async function Test()
 {
-    const response = await axios.get("https://www.boredapi.com/api/activity");
-    const data = await response.data as Response;
+    const response = await fetch("https://www.boredapi.com/api/activity", { cache: 'no-store' });
+    const data = await response.json() as Response;
 
     return (
         <div>
